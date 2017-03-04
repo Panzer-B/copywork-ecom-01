@@ -5,6 +5,7 @@
   "dependencies": {
     "bootstrap": "^4.0.0-alpha.6",
     "browser-sync": "^2.0.0",
+    "font-awesome": "^4.7.0",
     "gulp": "gulpjs/gulp#4.0",
     "minimist": "^1.2.0",
     "patternlab-node": "^2.0.0",
