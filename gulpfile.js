@@ -187,6 +187,7 @@ gulp.task('patternlab:connect', gulp.series(function(done) {
       // Ignore all HTML files within the templates folder
       blacklist: ['/index.html', '/', '/?*']
     },
+      startPath:'/?p=templates-home-template',
     notify: {
       styles: [
         'display: none',
@@ -214,6 +215,6 @@ gulp.task('patternlab:connect', gulp.series(function(done) {
 /******************************************************
  * COMPOUND TASKS
 ******************************************************/
-gulp.task('default', gulp.series('patternlab:build'));
+gulp.task('default', gulp.series('patternlab:build', 'patternlab:connect', watch));
 gulp.task('patternlab:watch', gulp.series('patternlab:build', watch));
 gulp.task('patternlab:serve', gulp.series('patternlab:build', 'patternlab:connect', watch));

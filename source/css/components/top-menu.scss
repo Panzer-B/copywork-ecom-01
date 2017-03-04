@@ -1,0 +1,58 @@
+$border-color: #444444;
+$font-large-size: 12px;
+$font-small-size: 11px;
+
+.top-menu {
+    height: 30px;
+    background: #000;
+    display: flex;
+
+    a, span {
+        display: flex;
+        color: white;
+        font-family: arial;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+    }
+
+    a {
+        border-left: 1px solid $border-color;
+        text-decoration: none;
+        padding: 0 14px;
+        font-size: $font-large-size;
+
+        &:nth-last-child(1){
+            border-right: 1px solid $border-color;
+        }
+
+        & > i{
+            margin-right:5px;
+        }
+
+        &:hover{
+            background: #262626;
+        }
+    }
+
+    span {
+        font-size: $font-small-size;
+    }
+}
+
+.top-menu__customer-care,
+.top-menu__navigation {
+    display: flex;
+}
+
+.top-menu__custom {
+    flex: 0 0 auto;
+    width: auto;
+}
+
+.top-menu__navigation {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
