@@ -12,7 +12,7 @@ $font-small-size: 11px;
         color: white;
         font-family: arial;
         height: 100%;
-        flex-direction: column;
+        align-items: center;
         justify-content: center;
         text-transform: uppercase;
     }
@@ -22,6 +22,18 @@ $font-small-size: 11px;
         text-decoration: none;
         padding: 0 14px;
         font-size: $font-large-size;
+
+        &:nth-last-child(1){
+            border-right: 1px solid $border-color;
+        }
+
+        & > i{
+            margin-right:5px;
+        }
+
+        &:hover{
+            background: #262626;
+        }
     }
 
     span {
@@ -37,7 +49,6 @@ $font-small-size: 11px;
 .top-menu__custom {
     flex: 0 0 auto;
     width: auto;
-    padding-left: 10px;
 }
 
 .top-menu__navigation {
